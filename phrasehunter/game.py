@@ -1,11 +1,35 @@
 # Create your Game class logic in here.
-
+from phrasehunter.phrase import Phrase
 class Game():
-    phrases = ["Embrace the glorious mess that you are", "Elevate your mindset and your altitude will follow", "Dance with the waves move with the sea", "In a world where you can be anything be kind", "life is about balance"]
 
     def __init__(self):
         self.missed = 0
+        self.phrases = self.create_phrases()
         self.active_phrase = None
         self.guesses = [" "]
-    
-        
+
+    def start(self):
+        pass
+
+    def create_phrases(self):
+        return [
+            Phrase("hello world"),
+            Phrase("there is no trying"),
+            Phrase("may the force be with you"),
+            Phrase("you have to see the matrix for yourself"),
+            Phrase("life is like a box of chocolates")
+        ]
+
+    def get_random_phrase(self):
+        pass
+
+    def welcome(self):
+        pass
+
+    def get_guess(self):
+        pass
+
+    def game_over(self):
+        pass
+
+
