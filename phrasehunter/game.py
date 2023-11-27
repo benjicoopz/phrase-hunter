@@ -29,8 +29,9 @@ class Game():
         return phrase_object
 
     def welcome(self):
-        pass
-
+        print("------------------------")
+        print("Welcome to Phrase-Hunter")
+        print("------------------------")
     def get_guess(self):
         pass
 
