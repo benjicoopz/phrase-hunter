@@ -1,6 +1,6 @@
 # Import your Game class
 from phrasehunter.game import Game
-from phrasehunter.phrase import Phrase
+
 # Create your Dunder Main statement.
 if __name__ == "__main__":
     # Inside Dunder Main:
@@ -9,4 +9,6 @@ if __name__ == "__main__":
 
 
 ## Start your game by calling the instance method that starts the game loop
+
+
 

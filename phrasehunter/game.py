@@ -1,5 +1,8 @@
 # Create your Game class logic in here.
 from phrasehunter.phrase import Phrase
+import random
+
+
 class Game():
 
     def __init__(self):
@@ -11,7 +14,8 @@ class Game():
     def start(self):
         pass
 
-    def create_phrases(self):
+    @staticmethod
+    def create_phrases():
         return [
             Phrase("hello world"),
             Phrase("there is no trying"),
@@ -21,7 +25,8 @@ class Game():
         ]
 
     def get_random_phrase(self):
-        pass
+        phrase_object = random.choice(self.phrases)
+        return phrase_object
 
     def welcome(self):
         pass
@@ -31,5 +36,3 @@ class Game():
 
     def game_over(self):
         pass
-
-
