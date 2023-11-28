@@ -16,9 +16,9 @@ class Game():
         print(f"Number missed: {self.missed}")
         self.active_phrase.display(self.guesses)
         user_guess = self.get_guess()
-        user_guess.append(self.guesses)
+        self.guesses.append(user_guess)
         print(user_guess)
-        self.active_phrase.display()
+        self.active_phrase.display(self.guesses)
 
     @staticmethod
     def create_phrases():
