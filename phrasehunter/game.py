@@ -12,7 +12,13 @@ class Game():
         self.guesses = [" "]
 
     def start(self):
-        pass
+        self.welcome()
+        print(f"Number missed: {self.missed}")
+        self.active_phrase.display(self.guesses)
+        user_guess = self.get_guess()
+        user_guess.append(self.guesses)
+        print(user_guess)
+        self.active_phrase.display()
 
     @staticmethod
     def create_phrases():
@@ -32,8 +38,9 @@ class Game():
         print("------------------------")
         print("Welcome to Phrase-Hunter")
         print("------------------------")
+
     def get_guess(self):
-        pass
+        return input("\nEnter a letter: ")
 
     def game_over(self):
         pass

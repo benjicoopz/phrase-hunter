@@ -4,7 +4,11 @@ class Phrase():
         self.phrase = phrase.lower()
         
     def display(self, guesses):
-        pass
+        for letter in self.phrase:
+            if letter in guesses:
+                print(f"{letter}", end=" ")
+            else:
+                print("_", end=" ")
 
     def check_letter(self):
         pass
