@@ -67,4 +67,5 @@ class Game():
             self.reset_game()
             self.start()
         else:
+            print("\nThanks for Playing!")
             sys.exit()
